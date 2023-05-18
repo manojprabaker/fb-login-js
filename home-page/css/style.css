@@ -1,0 +1,382 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+a.navbar-brand {
+    width: 9%;
+}
+
+.search-bar input {
+    background-color: #f0f2f5;
+    border: none;
+    padding: 9px 70px;
+    border-radius: 16px;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.search-bar {
+    position: relative;
+    margin-left: 20rem;
+}
+
+i.fa-solid.fa-magnifying-glass {
+    color: #777;
+    position: absolute;
+    top: 33%;
+    left: 5%;
+}
+
+nav ul li a img {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+    margin-left: 8px;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    align-items: center !important;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-nav li a i {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #000;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #efefef;
+    line-height: 35px;
+
+    font-size: 18px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.settings,
+.help,
+.feedback,
+.logout {
+    align-items: center;
+    display: flex;
+    padding: 12px 0;
+    gap: 7%;
+}
+
+.settings,
+.help,
+.feedback,
+.logout {
+    margin-left: 8px;
+}
+
+.settings i,
+.help i,
+.feedback i,
+.logout i {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #000;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #efefef;
+    line-height: 35px;
+    font-size: 18px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.settings a,
+.help a,
+.feedback a,
+.logout a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #222;
+}
+
+.profile-item {
+    position: relative;
+}
+
+.options {
+    display: none;
+    border-radius: 4%;
+    top: 134%;
+    padding: 12px;
+    background: #fff;
+    position: absolute;
+    width: 20vw;
+    right: 1vw;
+    box-shadow: 0px 0px 2px 1px #bdb8b8;
+    transition: all 0.5s ease;
+}
+
+.active-options {
+    display: block;
+}
+
+a.log-out {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.logout:hover {
+    color: #000;
+}
+
+.main .left {
+    width: 25%;
+    height: 92vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #f5f5f5;
+    padding: 20px 6px 5px 10px;
+    position: fixed;
+}
+
+.main .left::-webkit-scrollbar {
+    width: 7px;
+}
+
+.main .left::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #f5f5f5;
+}
+
+.main .left:hover::-webkit-scrollbar-thumb {
+    background: #cccccc;
+}
+
+.img p {
+    margin: 0;
+}
+
+.main .left .img {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.main .left .img:hover {
+    background: #e3e3e3;
+}
+
+.main .left .img img {
+    width: 13%;
+    /* height: 40px; */
+
+    border-radius: 50%;
+    margin: 8px 15px 8px 0;
+}
+
+.main .left hr {
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background: #cccccc;
+    margin: 10px 0;
+}
+
+.main .left h2 {
+    font-size: 18px;
+    color: #919191;
+    margin: 5px 0;
+}
+
+.main .left .edit {
+    color: #45abff;
+    font-size: 15px;
+    float: right;
+    position: relative;
+    bottom: 23px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.main .left:hover .edit {
+    opacity: 1;
+}
+
+.main .left .shortcuts {
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.main .left .shortcuts:hover {
+    background: #e3e3e3;
+    cursor: pointer;
+}
+
+.main .left .shortcuts img {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 10px;
+    margin: 8px 15px 8px 0;
+}
+
+.my-post {
+    width: 50%;
+    margin-top: 2%;
+    height: auto;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 26%;
+}
+
+.my-post img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+}
+
+.my-post .post-top {
+    display: flex;
+    align-items: center;
+}
+
+.my-post .post-top input {
+    margin-right: 12px;
+    width: 90%;
+    padding: 10px;
+    margin-left: 20px;
+    border: 0;
+    outline: none;
+    background: #efefef;
+    border-radius: 30px;
+    font-size: 17px;
+}
+
+
+.my-post .post-top input:hover {
+    background: #e3e3e3;
+    cursor: pointer;
+}
+
+.my-post hr {
+    width: 100%;
+    height: 1px;
+    background: #cccccc;
+    border: 0;
+    margin: 10px 0;
+}
+
+.my-post .post-bottom {
+    width: 95%;
+    display: flex;
+
+    margin-top: 20px;
+}
+
+.my-post .post-bottom .post-icon {
+    display: flex;
+
+    margin: 0 auto;
+    padding: 7px 40px;
+    cursor: pointer;
+}
+
+.my-post .post-bottom .post-icon:hover {
+    background: #efefef;
+    border-radius: 8px;
+}
+
+.my-post .post-bottom .post-icon i.video {
+    font-size: 23px;
+    color: red;
+    margin-right: 8px;
+}
+
+.my-post .post-bottom .post-icon i.photo {
+    font-size: 23px;
+    color: #27cc37;
+    margin-right: 8px;
+}
+
+.my-post .post-bottom .post-icon i.feeling {
+    font-size: 23px;
+    color: #f7b928;
+    margin-right: 8px;
+}
+
+button#post {
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 7px;
+    border: navajowhite;
+    cursor: pointer;
+    margin-right: -1px;
+}
+
+div#post-tray {
+    margin-left: 28%;
+    margin-top: 6%;
+}
+
+.inner-div {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    width: 67%;
+    font-size: 20px;
+    padding: 14px 14px;
+    margin: 10px 0;
+}
+i.fa-solid.fa-heart {
+    height: 26px;
+    background: #f52c4c;
+    border-radius: 34px;
+    width: 26px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+i.fa-solid.fa-thumbs-up {
+    height: 26px;
+    background: #5d8ffe;
+    border-radius: 34px;
+    width: 26px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.reactions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.edit-delete {
+    cursor: pointer;
+}
